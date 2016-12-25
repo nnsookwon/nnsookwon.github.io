@@ -1,0 +1,125 @@
+#prof-pic {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo-img {
+	width: 40px;
+	height: 40px;
+}
+
+#header {
+	text-align: center;
+	padding:30px 0px 10px 0px;
+}
+
+#header h1 {
+	font-size: 64px;
+	margin: 0px;
+
+}
+
+body {
+	margin: 0px;
+	background: #e0e0ff;
+	font-size: 20px;
+}
+
+#subhead {
+	text-align: center;
+}
+
+.column {
+	width: 50%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.large_column {
+	width: 75%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.cs-class {
+	font-weight: bold;
+	color: red;
+}
+
+#interests p{
+	text-decoration: underline;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#navbar {
+	text-align: justify;
+	min-width: 500px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 20px 40px 0px 40px;
+}
+
+#navbar:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#navbar li {
+    display: inline-block;
+}
+
+#navbar a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#fun_facts li{	font-size: 36px;
+	font-family: cursive;
+}
+
+#message_space {
+	font-size: 48px;
+	color: black;
+	text-align: center;
+}
+
+#img, #img_pug{
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	height: 300px;
+	max-width: 300px;
+}
+
+#big_img{
+	display: block;
+	margin: 0 auto;
+	height: 500px;
+	width: auto;
+}
+
+
+#nalinda {
+	background: #89cff0;
+	font-family: cursive;
+}
+#resume p{
+	font-weight: bold;
+}
+
+.block_large {
+	width:10px;
+}
+
+.block_small {
+	width: 90%;
+}
+
+
