@@ -59,7 +59,7 @@ body {
 
 #navbar {
 	text-align: justify;
-	min-width: 500px;
+	min-width: 350px;
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	padding: 20px 40px 0px 40px;
@@ -151,3 +151,27 @@ tr.border_bottom td {
 	flex-grow: 1;
 	padding: 20px 40px;
 }
+
+/********* Course divs ***********/
+
+.courses-cell {
+	width:33.33%;
+	padding: 10px;
+}
+
+.course-row {
+	width: 100%;
+	display: flex;
+}
+
+.course-title {
+	flex-grow: 1;
+	padding-right: 20px
+}
+
+.course-grade {
+	flex: 0 0 40px;
+	font-weight: bold;
+	justify-content: left;
+}
+
