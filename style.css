@@ -3,6 +3,7 @@
 	height: 200px;
 	display: block;
 	margin: 0 auto;
+	box-shadow: -2px 5px 5px;
 }
 
 .logo-img {
@@ -23,7 +24,7 @@
 
 body {
 	margin: 0px;
-	background: #e5f2fb;
+	background: #c4c8ce;
 	font-size: 20px;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 .column {
-	width: 50%;
+	width: 60%;
 	text-align: left;
 	margin: 0 auto;
 }
@@ -59,10 +60,14 @@ body {
 
 #navbar {
 	text-align: justify;
-	min-width: 350px;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
+	width: 500px;
+	border: 1px solid black;
+	margin: 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 20px 40px 0px 40px;
+	border-radius: 10px;
+	background: #000e7a;
+	
 }
 
 #navbar:after {
@@ -75,9 +80,10 @@ body {
 }
 
 #navbar a{
-	color: black;
+	color: white;
 	font-size: 20px;
 	text-decoration: none;
+	text-shadow: 3px 3px #000000
 }
 
 #fun_facts li{	font-size: 36px;
@@ -104,7 +110,7 @@ body {
 	width: auto;
 	height: auto;
 	display: block;
-	margin: auto;
+	margin: auto auto;
 }
 
 #big_img{
@@ -119,6 +125,12 @@ body {
 	background: #89cff0;
 	font-family: cursive;
 }
+
+#resume {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
 #resume p{
 	font-weight: bold;
 }
@@ -138,12 +150,17 @@ tr.border_bottom td {
 }
 /****** For two column information ******/
 .flex-container {
-	display: flex;
-	border-bottom:1pt solid black;
+	display: flex;	
+    border-radius: 25px;
+	border: 1px solid black;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 30px;
+	background: #e5f2fb;
 }
 
 .video {
-	width: 560px;
+	width: auto;
 	margin: auto auto;
 	flex: none;
 }
@@ -151,6 +168,14 @@ tr.border_bottom td {
 .flex-description {
 	flex-grow: 1;
 	padding: 20px 40px;
+}
+
+.left {
+	padding: 20px 10px 20px 20px;
+}
+
+.right {
+	padding: 20px 20px 10px 20px;
 }
 
 /********* Course divs ***********/
