@@ -158,7 +158,7 @@ tr.border_bottom td {
 }
 /****** For two column information ******/
 .flex-container {
-	display: flex;	
+	display: inline-flex;	
     border-radius: 25px;
 	border: 1px solid black;
 	padding: 20px;
