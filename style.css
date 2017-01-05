@@ -22,6 +22,10 @@
 
 }
 
+#header img {
+	width: 500px;
+}
+
 body {
 	margin: 0px;
 	background: #c4c8ce;
@@ -60,10 +64,10 @@ body {
 
 #navbar {
 	text-align: justify;
-	width: 500px;
+	width: 700px;
 	border: 1px solid black;
 	margin: 0 auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
 	padding: 20px 40px 0px 40px;
 	border-radius: 10px;
 	background: #000e7a;
