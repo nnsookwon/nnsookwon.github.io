@@ -33,8 +33,12 @@ body {
 }
 
 #subhead {
-	text-align: center;
+	margin: 20px auto 40px auto;
+	height: 75px;
+	display: block;
 }
+
+
 
 .column {
 	width: 60%;
