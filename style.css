@@ -42,12 +42,14 @@ body {
 
 .column {
 	width: 60%;
+	min-width: 600px;
 	text-align: left;
 	margin: 0 auto;
 }
 
 .large_column {
 	width: 75%;
+	min-width: 800px;
 	text-align: left;
 	margin: 0 auto;
 }
