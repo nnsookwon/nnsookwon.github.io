@@ -7,7 +7,7 @@ function loadImages(times){
   if (times === 0)
     return;
     $.getJSON(
-      "https://www.reddit.com/r/pug.json?limit=10&after=t3_"+lastId,
+      "http://www.reddit.com/r/pug.json?limit=10&after=t3_"+lastId,
       (data) =>{
         var children = data.data.children;
         $.each(children, (i, post) => {
