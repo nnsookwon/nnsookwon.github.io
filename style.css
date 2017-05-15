@@ -1,84 +1,78 @@
-#prof-pic {
-	width: 200px;
-	height: 200px;
-	display: block;
-	margin: 40px auto;
-	box-shadow: -2px 5px 5px;
+   #prof-pic {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 40px auto;
+    box-shadow: -2px 5px 5px;
 }
 
 .logo-img {
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 #header {
-	text-align: center;
-	padding:30px 0px 10px 0px;
+    text-align: center;
+    padding:30px 0px 10px 0px;
 }
 
 #header h1 {
-	font-size: 64px;
-	margin: 0px;
+    font-size: 64px;
+    margin: 0px;
 
 }
 
 #header img {
-	width: 500px;
-}
-
-body {
-	margin: 0px;
-	background: #c4c8ce;
-	font-size: 20px;
+    width: 500px;
 }
 
 #subhead {
-	margin: 20px auto 40px auto;
-	height: 75px;
-	display: block;
+    margin: 20px auto 40px auto;
+    height: 75px;
+    display: block;
 }
 
 
 
 .column {
-	width: 60%;
-	min-width: 600px;
-	text-align: left;
-	margin: 0 auto;
+    width: 60%;
+    min-width: 600px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .large_column {
-	width: 75%;
-	min-width: 800px;
-	text-align: left;
-	margin: 0 auto;
+    width: 75%;
+    min-width: 800px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .cs-class {
-	font-weight: bold;
-	color: red;
+    font-weight: bold;
+    color: red;
 }
 
 #interests p{
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #footer {
-	text-align: center;
-	margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #navbar {
-	text-align: justify;
-	min-width: 350px;
-	max-width: : 700px;
-	border: 1px solid black;
-	margin: 0 auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-	padding: 20px 40px 0px 40px;
-	border-radius: 10px;
-	background: #000e7a;
-	
+    text-align: justify;
+    min-width: 350px;
+    max-width: : 700px;
+    border: 1px solid black;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    padding: 20px 40px 0px 40px;
+    border-radius: 10px;
+    background: #000e7a;
+    
 }
 
 #navbar:after {
@@ -91,124 +85,157 @@ body {
 }
 
 #navbar a{
-	color: white;
-	font-size: 20px;
-	text-decoration: none;
-	text-shadow: 3px 3px #000000
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 3px 3px #000000
 }
 
-#fun_facts li{	font-size: 36px;
-	font-family: cursive;
+#fun_facts li{  font-size: 36px;
+    font-family: cursive;
 }
 
 #message_space {
-	font-size: 48px;
-	color: black;
-	text-align: center;
+    font-size: 48px;
+    color: black;
+    text-align: center;
 }
 
 #img{
-	display: block;
-	margin: 0 auto;
-	width: auto;
-	height: 300px;
-	max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 300px;
+    max-width: 300px;
 }
 
 #img_pug {
-	max-width: 100%;
-	max-height: 100%;
-	width: auto;
-	height: auto;
-	display: block;
-	margin: auto auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto auto;
 }
 
 #big_img{
-	display: block;
-	margin: 0 auto;
-	height: 500px;
-	width: auto;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: auto;
 }
 
 
 #nalinda {
-	background: #89cff0;
-	font-family: cursive;
+    background: #89cff0;
+    font-family: cursive;
 }
 
 #resume {
-	padding-left: 40px;
-	padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #resume p{
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .block_large {
-	width:10px;
+    width:10px;
 }
 
 .block_small {
-	width: 90%;
+    width: 90%;
 }
 
 tr.border_bottom td {
-	border-bottom:1pt solid black;
-	border-top:1pt solid black;
-	
+    border-bottom:1pt solid black;
+    border-top:1pt solid black;
+    
 }
 /****** For two column information ******/
 .flex-container {
-	display: flex;	
-    border-radius: 25px;
-	border: 1px solid black;
-	padding: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 30px;
-	background: #e5f2fb;
+    display: flex;  
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    background: #F0F0F0;
 }
 
 .video {
-	width: auto;
-	margin: auto auto;
-	flex: none;
+    width: auto;
+    margin: auto auto;
+    flex: none;
 }
 
 .flex-description {
-	flex-grow: 1;
-	padding: 20px 40px;
+    flex-grow: 1;
+    padding: 20px 40px;
 }
 
 .left {
-	padding: 20px 10px 20px 20px;
+    padding: 20px 10px 20px 20px;
 }
 
 .right {
-	padding: 20px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 /********* Course divs ***********/
 
 .courses-cell {
-	width:33.33%;
-	padding: 10px;
+    width:33.33%;
+    padding: 10px;
 }
 
 .course-row {
-	width: 100%;
-	display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .course-title {
-	flex-grow: 1;
-	padding-right: 20px
+    flex-grow: 1;
+    padding-right: 20px
 }
 
 .course-grade {
-	flex: 0 0 40px;
-	font-weight: bold;
-	justify-content: left;
+    flex: 0 0 40px;
+    font-weight: bold;
+    justify-content: left;
 }
 
+
+/**** Customizing Bootstrap CSS ****/
+
+.carousel-item > iframe {
+    display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+#carousel_content {
+    padding-top: 20px;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.navbar-brand small {
+  display:block;
+  font-size:16px;
+}
+
+.content_header {
+    margin: 60px 0 !important;
+}
+
+.nav-link {
+    font-size: 20px;
+}

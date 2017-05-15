@@ -1,49 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="android_robot.png">
-  </head>
-  <body>
+<html lang="en">
 
+<head>
 
-    <div class="column">
-      <div id="header">
-        <img src="name_edit_final.png">
-        <h4>nnsookwon@gmail.com | (714) 576-4600 | Los Angeles, CA, 90024</h4>  
-        <div>
-          <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="courses.html">Courses</a></li>
-          </ul>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nate Sookwongse</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+    <!-- Custom styles for this template -->
+    <style>
+    body {
+        padding-top: 54px;
+    }
+    
+    @media (min-width: 992px) {
+        body {
+            padding-top: 56px;
+        }
+    }
+    /* Temporary navbar container fix */
+    
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+ 
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">Nate Sookwongse
+            <small>nnsookwon@gmail.com</small></a>
+
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-target="#carousel_content" data-slide-to="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#carousel_content" data-slide-to="1">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#carousel_content" data-slide-to="2">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#carousel_content" data-slide-to="3">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#carousel_content" data-slide-to="4">Courses</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    
+    
+    <div id="carousel_content" class="carousel slide" data-ride="carousel" data-interval="false" >
+        <div class="carousel-inner" role="listbox">
+            <div id="home_content" class="carousel-item active">
+                <iframe src="home_content.html"></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="interests_content.html"></iframe>
+            </div>
+            <div id="projects_content" class="carousel-item">
+                <iframe src="projects_content.html"></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="resume_content.html"></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="courses_content.html"></iframe>
+            </div>
       </div>
-  	
-      <div class="column"> 
-        <img id="prof-pic" src="profile.jpg"> 			
-  			<img id="subhead" src="index_subhead.png">
-
-        <div class="flex-container">
-          <div class="flex-description">
-      			<p>My name is Nate Sookwongse. I am a second-year undergraduate student of UCLA's Henry Samueli School of Engineering and Applied Science. Initially enrolled as a Mechanical Engineering student, I have found my passion in programming and decided to study Computer Science instead.</p>
-      			
-            <p>During the summer of 2016, I interned at NASA's Jet Propulsion Laboratory (JPL), in Pasadena, populating and maintaining JPL's NX and Solidworks library of mechanical parts. The task required strict attention to detail and provided valuable experience working with NX, Solidworks, and Microsoft Excel. The project, which was expected to take at least 12 months, was completed during my 12 week internship.</p>      
-
-            <p>There's so many new concepts and skills I want to learn and improve on. Recently, my biggest areas of interest have been:</p>
-
-            <ul>
-              <li>Mobile Application Development (Android, Java)</li>
-              <li>Web Development (HTML, CSS, Javascript)</li>
-              <li>Machine Learning/Data Analysis (Octave, Python)</li>
-            </ul>	
-    		
-    	   </div>
-       </div>
     </div>
+    
 
-  </body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
