@@ -1,5 +1,5 @@
 /*** Pug Slideshow from Reddit ***/
-var img_urls = [""];
+var img_urls = ["https://i.imgur.com/VUJnLw7.jpg"];
 var click = 0;
 var lastId="";
 
@@ -7,7 +7,7 @@ function loadImages(times){
   if (times === 0)
     return;
     $.getJSON(
-      "http://www.reddit.com/r/pug.json?limit=10&after=t3_"+lastId,
+      "https://www.reddit.com/r/pug.json?limit=10&after=t3_"+lastId,
       (data) =>{
         var children = data.data.children;
         $.each(children, (i, post) => {
