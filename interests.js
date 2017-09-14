@@ -1,31 +1,26 @@
 /*** Pug Slideshow from Reddit ***/
-var img_urls = ["https://i.imgur.com/VUJnLw7.jpg"];
-var click = 0;
-var lastId="";
+let pugImgUrls = ["https://i.imgur.com/VUJnLw7.jpg"];
+const danceImgCnt = 3;
+let clickPug = 0;
+let clickDance = 2;
 
-function loadImages(times){
-  if (times === 0)
-    return;
-    $.getJSON(
-      "https://www.reddit.com/r/pug.json?limit=10&after=t3_"+lastId,
-      (data) =>{
-        var children = data.data.children;
-        $.each(children, (i, post) => {
-            let url = post.data.url;
-            url = convertImgUrl(url);
-            if (url !== "")
-              img_urls.push(url);
-         lastId = post.data.id;
-         console.log(lastId)
-         })
-         loadImages(times-1);
-    });
+function loadImages() {
+  return fetch("https://www.reddit.com/r/pug.json?limit=100")
+    .then( res => res.json() )
+    .then( json => {
+      const children = json.data.children;
+      for (let i = 0; i < children.length; i++) {
+        const url = children[i].data.url;
+        if (url !== "")
+          pugImgUrls.push(url);
+      }
+    })
 }
 
 function removeInvalidImg(){
   let src = document.getElementById("img_pug").src;
-  img_urls.splice(click,1);
-  setImage();
+  pugImgUrls.splice(clickPug,1);
+  setPugImage();
 }
 
 function convertImgUrl(url){
@@ -42,15 +37,25 @@ function convertImgUrl(url){
   }      
 }
 
-function setImage(){  
-  if (click == img_urls.length)
-    click = 0;
-	let img_space = document.getElementById("img_pug");
-	img_space.src = convertImgUrl(img_urls[click]);
-  click++;
+function setPugImage(){  
+  if (clickPug == pugImgUrls.length)
+    clickPug = 0;
+	let imgSpace = document.getElementById("img_pug");
+	imgSpace.src = convertImgUrl(pugImgUrls[clickPug]);
+  //console.log(pugImgUrls[clickPug])
+  clickPug++;
 }
 
-loadImages(25)
-setInterval(setImage,2500);
+function setDanceImage() {
+  if (clickDance > danceImgCnt)
+    clickDance = 1;
+  let imgSpace = document.getElementById("img_dance");
+  imgSpace.src = "images/dance-" + clickDance + ".jpg";
+  clickDance++;
+}
+
+loadImages();
+setInterval(setPugImage,2500);
+setInterval(setDanceImage, 5000);
 
 
